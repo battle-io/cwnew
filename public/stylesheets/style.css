@@ -1,0 +1,19 @@
+
+
+/*
+ * General
+ */
+#content {display: table;}
+
+#MainContent { 
+	display: table-cell; 
+	width: 600px; } 
+
+aside {display: table-cell; } 
+
+
+/*
+ * Homepage
+ */
+
+#sidebar-homepage { width: 300px; } 

@@ -1,6 +1,9 @@
 Cwnew::Application.routes.draw do
 
-  root :to => "home#index" , :as => :home
+  ## Home
+  # 
+	root :to => "home#index" , :as => :home
+	match "/edu", :to => "home#edu", :as => :edu
 
   ## Authentication
   #

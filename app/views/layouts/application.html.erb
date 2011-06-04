@@ -1,12 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Cwnew</title>
+  <title>Code-wars</title>
   <%= stylesheet_link_tag :all %>
   <%= javascript_include_tag :defaults %>
   <%= csrf_meta_tag %>
 </head>
 
+<body>
+
+<header>
+<hgroup>
+<h1>Code-wars for Education</h1>
+<h2>Collaborative coding challenges</h2>
+</hgroup>
+</header>
+<!-- <nav></nav> --> 
+
 <%= yield %>
+
+<footer>
+<a href="http://twitter.com/#!/search?q=%23startupweekend">#startupweekend</a>: <a href="http://twitter.com/#!/Cogito1729">@cogito1729</a> & <a href="http://twitter.com/#!/cookrn">@cookrn</a>
+</footer>
+</body>
+
+
 
 </html>

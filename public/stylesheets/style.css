@@ -3,15 +3,38 @@
 /*
  * General
  */
-#content {display: table;}
+
+body {background: #eee; } 
+
+h1 {font-size: 500%;}
+h2 {font-size: 300%;}
+
+header, footer { } 
+footer { text-align: center;} 
+
+hgroup {
+	margin-top: 6px;
+	padding: 5px 15px;
+	text-align: center;
+	background-image: -webkit-gradient(radial, 50% 0, 0, 50% 100, 950, from(white), to(#aaa));
+	background-image: -moz-radial-gradient(50% 50% 90deg, circle cover, white, #aaa);
+}
+
+#content {
+	display: table;
+	margin: 0 10px;
+	width:100%;
+	}
+	
 
 #MainContent { 
 	display: table-cell; 
-	width: 600px; } 
+	width: 800px; 
+	} 
 
 aside {display: table-cell; } 
 
-
+.blbar {height:5px; background: #aaa;}
 /*
  * Homepage
  */

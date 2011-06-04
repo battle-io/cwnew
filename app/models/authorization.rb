@@ -19,7 +19,7 @@ class Authorization < ActiveRecord::Base
     auth = find_or_create_by_uid omniauth_hash["uid"]
 
     # specify attributes and save
-    auth.create_user! unless auth.user.present?
+    auth.build_user.save! unless auth.user.present?
     auth.provider = omniauth_hash["provider"]
     auth.save
 

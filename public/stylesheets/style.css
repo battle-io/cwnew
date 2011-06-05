@@ -5,7 +5,7 @@
  */
 
 body {
-	background: #eee; 
+	background: #fefefe; 
 	font: 13px/1.231 sans-serif
 	} 
 
@@ -16,7 +16,7 @@ header, footer { }
 footer { text-align: center;} 
 
 hgroup {
-	margin-top: 6px;
+	margin-top: 20px;
 	padding: 5px 15px;
 	text-align: center;
 	background-image: -webkit-gradient(radial, 50% 0, 0, 50% 100, 950, from(white), to(#aaa));
@@ -25,7 +25,7 @@ hgroup {
 
 #content {
 	display: table;
-	margin: 0 30px;
+	margin: 15px 30px;
 	width:100%;
 	font-size:150%
 	}
@@ -78,7 +78,7 @@ aside {display: table-cell; }
 	font-size: 45px;
 }
 
-.blbar {height:5px; background: #aaa;}
+.blbar {height:5px; background: #aaa; margin: 15px 0 5px;}
 /*
  * Homepage
  */

@@ -45,8 +45,7 @@ nav {		border-bottom:1px solid #ccc;}
 	
 #content {
 	display: table;
-	margin: 15px 30px;
-	width:100%;
+	margin: 15px auto;
 	font-size:150%
 	}
 

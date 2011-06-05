@@ -2,6 +2,9 @@ class User < ActiveRecord::Base
 
   # Relations
   has_many :authorizations
+  has_many :bots
+  has_many :likes_given , :class_name => "Like"
+  has_many :likes , :through => :bots
 
   # Instance Methods
 

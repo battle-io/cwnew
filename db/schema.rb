@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110604234906) do
+ActiveRecord::Schema.define(:version => 20110605032356) do
 
   create_table "authorizations", :force => true do |t|
     t.string   "provider"
@@ -19,6 +19,36 @@ ActiveRecord::Schema.define(:version => 20110604234906) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.text     "auth_data_cache"
+  end
+
+  create_table "bot_gists", :force => true do |t|
+    t.text     "gist_embed_code"
+    t.integer  "bot_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "bots", :force => true do |t|
+    t.string   "title"
+    t.text     "description"
+    t.string   "repo"
+    t.integer  "game_id"
+    t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "games", :force => true do |t|
+    t.string   "title"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "likes", :force => true do |t|
+    t.integer  "user_id"
+    t.integer  "bot_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "users", :force => true do |t|

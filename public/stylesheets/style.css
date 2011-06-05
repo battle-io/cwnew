@@ -263,12 +263,12 @@ h2.punch { font-weight:bold; color: #487858;}
 .loginbutton{ 
 	border-radius: 5px;
 	border: 1px solid #D4D4D4;
-	background-image: -webkit-gradient(radial, from(#f4f4f4), to(#ececec));
+	background-image: -webkit-linear-gradient(#f4f4f4, #ececec);
 	background-image: -moz-linear-gradient(center top , #F4F4F4, #ECECEC);
 	width: 120px;
 }
 .loginbutton:hover{
-	background-image: -webkit-gradient(radial, from(#CCC), to(#F2F2F2));
+	background-image: -webkit-linear-gradient(#CCC, #F2F2F2);
 	background-image: -moz-linear-gradient(center top , #CCC, #F2F2F2);
 }
 .imgalign { padding:10px; } 

@@ -15,7 +15,7 @@ class BotsController < ApplicationController
 
   def new
     @bot = Bot.new
-    @bot.bot_gists.build
+    @bot.bot_gists.build :gist_embed_code => '<script src="https://gist.github.com/953958.js?file=resource_controller.rb"></script>'
   end
 
   def show

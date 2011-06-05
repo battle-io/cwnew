@@ -162,7 +162,7 @@ footer {
 	}
 	
 #footersection h2 {font-family:garamond; margin:0 0 0.5em;font-size:150%; font-weight:800;}
-#footersection li {padding:0px; font-size:105%}
+#footersection li {padding:0px; font-size:105%; list-style: none outside none;}
 #footersection a {color:#FFF;}
 #footersection .copyright {text-align:right; margin-top:3em; margin-right:8%;}
 

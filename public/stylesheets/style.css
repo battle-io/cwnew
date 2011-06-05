@@ -116,6 +116,14 @@ form.new_bot {
 }
 
 /*
+ * Bot Show Page
+ */
+
+#bot-thumb-up-tick {
+  display: none;
+}
+
+/*
  * General
  */
 
@@ -172,7 +180,6 @@ nav {		border-bottom:1px solid #ccc;}
 #content {
 	display: table;
 	margin: 15px auto;
-	font-size:140%
 	}
 
 aside {display: table-cell; } 

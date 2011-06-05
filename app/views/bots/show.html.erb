@@ -1,4 +1,9 @@
 <h2><%= @bot.title %></h2>
+<%= form_for Like.new do |f| %>
+  <%= f.hidden_field :bot_id , { :value => @bot.id } %>
+  <a href="#"><%= image_tag "thumb_up.png" , :id => "bot-thumb-up" , "data-form-id" => "new_like" %></a>
+<% end %>
+<%= image_tag "tick.png" , :id => "bot-thumb-up-tick" %>
 <p><%= @bot.description%></p>
 <% if @bot.repo %>
   <%= link_to @bot.repo %>
@@ -12,3 +17,7 @@
     </div>
   <% end %>
 </div>
+
+<% content_for :end_scripts do %>
+  <%= javascript_include_tag "bot_show" %>
+<% end %>

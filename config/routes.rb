@@ -15,6 +15,10 @@ Cwnew::Application.routes.draw do
     root :to => "home#index" , :as => :home
     match "/edu", :to => "home#edu", :as => :edu
 
+  ## Likes
+  #
+    resources :likes , :only => [ :create ]
+
   ## Users
   #
     resources :users , :only => [ :show ]

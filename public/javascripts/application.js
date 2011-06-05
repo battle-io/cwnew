@@ -1,2 +1,18 @@
-// Place your application-specific JavaScript functions and classes here
-// This file is automatically included by javascript_include_tag :defaults
+//// GET SOME!
+//
+
+( function( window , _ , $ ){
+
+  var BIO = window.BIO || BIO || {};
+
+  _.extend( BIO , {
+
+    init: function(){}
+
+  } );
+
+  window.BIO = BIO;
+  $( BIO.init );
+
+} )( window , _ , jQuery );
+

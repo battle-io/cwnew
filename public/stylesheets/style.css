@@ -2,20 +2,44 @@
  * Users Show Page
  */
 
+#user-bot-list {
+  float: left;
+  width: 366px;
+  margin-left: 20px;
+}
+
+.bot-entry {
+  height: auto;
+  overflow: hidden;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.bot-graph {
+  width: 180px;
+  float: right;
+}
+
+.bot-title {
+  color: #ccc;
+  font-size: 18px;
+}
+
+.bot-game-title {
+  font-size: 12px;
+}
+
 .page-container {
   height: auto;
   overflow: hidden;
 }
 
-.padded {
-  float: left;
-  clear: both;
-  margin-left: 200px;
-}
-
 #user-intro {
+  height: auto;
   margin-top: 20px;
   margin-bottom: 20px;
+  overflow: hidden;
 }
 
 #user-intro img {
@@ -24,8 +48,37 @@
 
 #user-name {
   padding-left: 100px;
-  padding-top: 18px;
   width: 300px;
+}
+
+#user-personal-leaderboard {
+  position: relative;
+  float: left;
+}
+
+#user-personal-leaderboard h3 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.leaderboard-entry {
+  border: 1px solid #ccc;
+  width: 600px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.leaderboard-entry.me {
+  background-color: #faffe9
+}
+
+.leaderboard-entry-left-icon , .leaderboard-entry-right-icon {
+  position: absolute;
+  top: 111px;
+}
+
+.leaderboard-entry-right-icon {
+  right: 0;
 }
 
 /*

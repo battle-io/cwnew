@@ -1,5 +1,9 @@
 <% entries.each do |entry| %>
-  <div class="leaderboard-entry">
+  <div class="leaderboard-entry <%= "me" if entry[:me?] %>">
+    <% if entry[:me?] %>
+      <%= image_tag "resultset_next.png"     , :class => "leaderboard-entry-left-icon" %>
+      <%= image_tag "resultset_previous.png" , :class => "leaderboard-entry-right-icon" %>
+    <% end %>
     <span class="leaderboard-entry-name"><%= entry[:name] %></span>
     &nbsp;&mdash;&nbsp;
     <span class="leaderboard-entry-bot-count"><%= entry[:bot_count] %> bots</span>

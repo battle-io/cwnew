@@ -5,3 +5,10 @@
 #
 #   cities = City.create([{ :name => 'Chicago' }, { :name => 'Copenhagen' }])
 #   Mayor.create(:name => 'Daley', :city => cities.first)
+#
+
+unless Game.count > 0
+  Game.create! :title => "Connect Four"
+  Game.create! :title => "Bullshit"
+end
+

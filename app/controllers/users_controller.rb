@@ -5,7 +5,9 @@ class UsersController < ApplicationController
 
   def show
     user_id = params[:id] || session["user_id"]
-    @user = User.find user_id
+    user = User.find user_id
+    @presenter = Users::ShowPresenter.new( user )
   end
 
 end
+

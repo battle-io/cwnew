@@ -9,10 +9,11 @@
 }
 
 .bot-entry {
+  clear: both;
   height: auto;
   overflow: hidden;
   padding-bottom: 10px;
-  margin-bottom: 10px;
+  margin-top: 10px;
   border-bottom: 1px solid #ccc;
 }
 
@@ -28,6 +29,10 @@
 
 .bot-game-title {
   font-size: 12px;
+}
+
+.new-bot-link {
+  float: right;
 }
 
 .page-container {
@@ -87,8 +92,36 @@
 }
 
 /*
+ * New Bot Page
+ */
+
+form.new_bot {
+  height: auto;
+  overflow: hidden;
+}
+
+.new_bot textarea {
+  height: 150px;
+}
+
+.new_bot textarea , .new_bot input {
+  width: 400px;
+}
+
+.new_bot .form_row {
+  float: left;
+  clear: both;
+  height: auto;
+  overflow: hidden;
+}
+
+/*
  * General
  */
+
+.header-action-link-text {
+
+}
 
 body {
 	font-family: Gill,Helvetica,sans-serif;

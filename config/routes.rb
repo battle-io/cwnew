@@ -18,7 +18,7 @@ Cwnew::Application.routes.draw do
   ## Users
   #
     resources :users , :only => [ :show ]
-    match "/profile" => "users#show"
+    match "/profile" => "users#show" , :as => :profile
 
 end
 

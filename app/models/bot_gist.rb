@@ -1,4 +1,4 @@
-class BotGists < ActiveRecord::Base
+class BotGist < ActiveRecord::Base
 
   # Relations
   belongs_to :bot

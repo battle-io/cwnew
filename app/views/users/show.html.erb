@@ -8,10 +8,12 @@
     <%= render :partial => "shared/leaderboard" , :locals => { :entries => @presenter.leaderboard_entries } %>
   </div>
   <div id="user-bot-list">
+    <%= link_to "New Bot" , new_bot_path , { :class => "new-bot-link" } %>
     <%= render :partial => "shared/bot_list" , :locals => { :bots => @presenter.user_bots } %>
   </div>
 </div>
 
+<!-- debug info -->
 <br />
 <br />
 <br />

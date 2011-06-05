@@ -1,6 +1,7 @@
 class Bot < ActiveRecord::Base
 
   # Relations
+  has_many   :bot_gists
   belongs_to :game
   has_many   :likes
   belongs_to :user

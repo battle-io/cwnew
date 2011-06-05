@@ -1,0 +1,14 @@
+<h2><%= @bot.title %></h2>
+<p><%= @bot.description%></p>
+<% if @bot.repo %>
+  <%= link_to @bot.repo %>
+<% else %>
+  <em>No GitHub repo &mbdash; shame on you!</em>
+<% end %>
+<div id="bot-gist-list">
+  <% @bot.bot_gists.each do |gist| %>
+    <div class="bot-gist">
+      <%= raw gist.gist_embed_code %>
+    </div>
+  <% end %>
+</div>

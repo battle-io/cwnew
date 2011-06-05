@@ -45,7 +45,11 @@ h1 {font-size: 500%;}
 h2 {font-size: 140%; line-height:1.2em; margin-top:1.2em; margin-bottom:2px;}
 
 a {text-decoration: none;} 
-li { list-style: circle outside none; margin-left: 10px;} 
+ul>li {list-style: circle outside none; }
+ol>li {list-style: decimal outside none;} 
+
+li { margin-left: 10px;} 
+
 
 hgroup {
 	padding: 30px 0;
@@ -65,7 +69,7 @@ nav {		border-bottom:1px solid #ccc;}
 	#topnavbar { font-family:"Trebuchet MS",sans-serif; font-weight:bold; }
 	#topnavbar a { padding: 5px 14px; display:block; float:left; color:#000; }
 	#topnavbar a:hover { color:white; background:#fafafa; color:#1C3A1C; }
-	#topnavbar li {border: 1px solid #ccc; border-right:none; display:block; float:left; list-style-type:none; }
+	#topnavbar li {border: 1px solid #ccc; border-right:none; display:block; float:left; list-style-type:none; margin: 0px;}
 	#topnavbar li.rightend {border-right:  1px solid #ccc; } 
 	#topnavbar li.admin a { background:#ec8380; }
 	#topnavbar li.dim a {color: #777; } 
@@ -147,10 +151,16 @@ footer {
 }
 
 .blbar {height:5px; background: #aaa; margin: 15px 0 5px;}
+
 /*
  * Homepage
  */
 
 #sidebar-homepage { width: 300px; } 
 h2.punch { font-weight:bold; color: #487858;}
-
+.rankings {padding-top:5px;font-size:15px; font-weight:500;} 
+.rankings>ol>li {margin-left: 20px; } 
+.rankings h3 {font-size:120%;} 
+/*
+ * Education Page
+ */

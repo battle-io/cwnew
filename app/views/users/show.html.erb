@@ -1,1 +1,19 @@
-<!-- some html code -->
+<div class="page-container">
+  <div id="user-intro" class="padded">
+    <%= image_tag @presenter.user_gravatar_url , :class => "user-gravatar" %>
+    <h2 id="user-name"><%= @presenter.user_full_name %></h2>
+  </div>
+  <div id="user-personal-leaderboard" class="padded">
+    <%= render :partial => "shared/leaderboard" , :locals => { :entries => @presenter.leaderboard_entries } %>
+  </div>
+  <div id="user-repo-list" class="padded">
+
+  </div>
+</div>
+
+<br />
+<br />
+<br />
+<br />
+<br />
+<%= @presenter.user.github_data.inspect %>

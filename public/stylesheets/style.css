@@ -1,4 +1,32 @@
+/*
+ * Users Show Page
+ */
 
+.page-container {
+  height: auto;
+  overflow: hidden;
+}
+
+.padded {
+  float: left;
+  clear: both;
+  margin-left: 200px;
+}
+
+#user-intro {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#user-intro img {
+  float: left;
+}
+
+#user-name {
+  padding-left: 100px;
+  padding-top: 18px;
+  width: 300px;
+}
 
 /*
  * General

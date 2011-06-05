@@ -1,0 +1,9 @@
+<% entries.each do |entry| %>
+  <div class="leaderboard-entry">
+    <span class="leaderboard-entry-name"><%= entry[:name] %></span>
+    &nbsp;&mdash;&nbsp;
+    <span class="leaderboard-entry-bot-count"><%= entry[:bot_count] %> bots</span>
+    &nbsp;&mdash;&nbsp;
+    <span class="leaderboard-entry-like-count"><%= entry[:like_count] %> likes</span>
+  </div>
+<% end %>

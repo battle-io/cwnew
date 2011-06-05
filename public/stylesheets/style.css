@@ -4,7 +4,10 @@
  * General
  */
 
-body {background: #eee; } 
+body {
+	background: #eee; 
+	font: 13px/1.231 sans-serif
+	} 
 
 h1 {font-size: 500%;}
 h2 {font-size: 300%;}
@@ -22,17 +25,58 @@ hgroup {
 
 #content {
 	display: table;
-	margin: 0 10px;
+	margin: 0 30px;
 	width:100%;
+	font-size:150%
 	}
-	
 
+aside {display: table-cell; } 
+	
 #MainContent { 
 	display: table-cell; 
 	width: 800px; 
 	} 
 
-aside {display: table-cell; } 
+#three-wide {margin-top:10px;} 
+#three-wide section {
+	display: table-cell; 
+	width: 33%;
+	padding: 10px 5px;
+	}
+
+#three-wide section>p {
+	margin: 0 auto;
+    width: 80%;
+}
+
+.roundbox {
+	width: 80%; height: 200px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	vertical-align: middle;
+	text-align:center;
+	margin: 0 auto;
+}
+
+.bluebox {
+	background-image: -webkit-gradient(radial, 50% 0, 0, 50% 100, 950, from(white), to(#22F));
+	background-image: -moz-radial-gradient(50% 50% 90deg, circle cover, white, #22F);
+}
+
+.greybox {
+	background-image: -webkit-gradient(radial, 50% 0, 0, 50% 100, 950, from(white), to(#222));
+	background-image: -moz-radial-gradient(50% 50% 90deg, circle cover, white, #222);
+}
+
+.greenbox {
+	background-image: -webkit-gradient(radial, 50% 0, 0, 50% 100, 950, from(white), to(#2F2));
+	background-image: -moz-radial-gradient(50% 50% 90deg, circle cover, white, #2F2);
+}
+.roundbox>h3 {
+	color: #444;
+	font-size: 45px;
+}
 
 .blbar {height:5px; background: #aaa;}
 /*

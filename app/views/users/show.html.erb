@@ -1,13 +1,14 @@
 <div class="page-container">
-  <div id="user-intro" class="padded">
+  <div id="user-intro">
     <%= image_tag @presenter.user_gravatar_url , :class => "user-gravatar" %>
     <h2 id="user-name"><%= @presenter.user_full_name %></h2>
   </div>
-  <div id="user-personal-leaderboard" class="padded">
+  <div id="user-personal-leaderboard">
+    <h3>Your Closest Competitors</h3>
     <%= render :partial => "shared/leaderboard" , :locals => { :entries => @presenter.leaderboard_entries } %>
   </div>
-  <div id="user-repo-list" class="padded">
-
+  <div id="user-bot-list">
+    <%= render :partial => "shared/bot_list" , :locals => { :bots => @presenter.user_bots } %>
   </div>
 </div>
 

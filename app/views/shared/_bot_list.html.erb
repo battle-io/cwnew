@@ -1,0 +1,7 @@
+<% bots.each do |bot| %>
+  <div class="bot-entry">
+    <%= image_tag "bot_list_placeholder_graph.png" , :class => "bot-graph" %>
+    <a href="<%= bot_path( bot[:bot_id] ) %>"><h4 class="bot-title"><%= bot[:title] %></h4></a>
+    <span class="bot-game-title">Game: <%= bot[:game_title] %></span>
+  </div>
+<% end %>

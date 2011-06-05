@@ -1,28 +1,27 @@
+<h3>Create a New Bot</h3>
 <%= form_for @bot do |f| %>
-  <h3>Create a New Bot</h3>
   <ul class="form-errors">
     <% f.object.errors.full_messages.each do |m| %>
       <li class="error-message"><%= m %></li>
     <% end %>
   </ul>
   <div class="form-row">
-    <%= f.label :title %>
-    <%= f.text_field :title %>
+    <%= f.text_field :title , { :placeholder => "Title" } %>
   </div>
   <div class="form-row">
-    <%= f.label :game_id %>
-    <%= f.select :game_id , Game.all.collect { |g| [ g.title , g.id ] } , { :prompt => true } %>
+    <%= f.select :game_id , Game.all.collect { |g| [ g.title , g.id ] } , { :prompt => "Please Select A Game" } %>
   </div>
   <div class="form-row">
-    <%= f.label :description %>
-    <%= f.text_area :description %>
+    <%= f.text_area :description , { :placeholder => "Description" } %>
   </div>
   <div class="form-row">
-    <%= f.label :repo %>
-    <%= f.text_field :repo %>
+    <%= f.text_field :repo , { :placeholder => "GitHub Repository" } %>
   </div>
   <div class="form-row">
-    Add some gists here!
+    <h4>Gists</h4>
+    <%= f.fields_for :bot_gists do |g| %>
+      <%= g.text_field :gist_embed_code %>
+    <% end %>
   </div>
   <div class="form-row submit">
     <%= f.submit "Save" %>

@@ -15,6 +15,7 @@ class BotsController < ApplicationController
 
   def new
     @bot = Bot.new
+    @bot.bot_gists.build
   end
 
   def show

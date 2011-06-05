@@ -6,11 +6,12 @@
 <%= image_tag "tick.png" , :id => "bot-thumb-up-tick" %>
 <p><%= @bot.description%></p>
 <% if @bot.repo %>
-  <%= link_to @bot.repo %>
+  <em>GitHub Repo: </em><%= link_to @bot.repo %>
 <% else %>
   <em>No GitHub repo &mbdash; shame on you!</em>
 <% end %>
 <div id="bot-gist-list">
+  <h4>Your Bot Gists</h4>
   <% @bot.bot_gists.each do |gist| %>
     <div class="bot-gist">
       <%= raw gist.gist_embed_code %>

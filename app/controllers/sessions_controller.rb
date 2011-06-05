@@ -11,5 +11,10 @@ class SessionsController < ApplicationController
     render :text => params[:message].humanize
   end
 
+  def destroy
+    session.delete "user_id"
+    redirect_to home_path
+  end
+
 end
 

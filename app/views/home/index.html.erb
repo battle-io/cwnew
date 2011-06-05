@@ -17,14 +17,16 @@
 </div><!-- #main --> 
 
 <aside id="sidebar-homepage">
-<div class="login">
-<h4>Login with:</h4>
-<div class="loginbutton">
-	<div class="imgalign">
-	<img src="http://wiki.freeradius.org/images/github_logo.png">
-	<img src="https://d3nwyuy0nl342s.cloudfront.net/images/modules/header/logov5.png" width="80px" style="margin:8px;" />
-	</div>
-</div>
-
-</div>
-<aside>
+  <div class="login">
+    <h4>Login with:</h4>
+    <div class="loginbutton">
+      <div class="imgalign">
+      <img src="http://wiki.freeradius.org/images/github_logo.png">
+      <img src="https://d3nwyuy0nl342s.cloudfront.net/images/modules/header/logov5.png" width="80px" style="margin:8px;" />
+      </div>
+    </div>
+  </div>
+</aside>
+<% content_for :end_scripts do %>
+  <%= javascript_include_tag "home_index" %>
+<% end %>

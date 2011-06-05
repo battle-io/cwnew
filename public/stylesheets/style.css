@@ -72,6 +72,8 @@
   text-align: center;
   margin-bottom: 10px;
   position: relative;
+  padding-top: 5px;
+  height: 19px;
 }
 
 .leaderboard-entry.me {
@@ -115,6 +117,10 @@ form.new_bot {
   overflow: hidden;
 }
 
+#add-bot-gist {
+  cursor: pointer;
+}
+
 /*
  * Bot Show Page
  */
@@ -123,12 +129,23 @@ form.new_bot {
   display: none;
 }
 
+#bot-gist-list {
+  width: 800px;
+  margin-top: 30px;
+}
+
 /*
  * General
  */
 
 .header-action-link-text {
+  display: block;
+  float: right;
+  padding: 1px 0 0 2px;
+}
 
+.header-action-login-image {
+  float: right;
 }
 
 body {
@@ -137,6 +154,11 @@ body {
 	font: 13px/1.231 sans-serif;
 	text-align:left;
 	} 
+
+a , a:hover , a:active , a:visited {
+  color: green;
+  font-weight: bold;
+}
 
 .cenwrap {width:988px; margin: 0 auto;  }
 
@@ -206,47 +228,46 @@ footer {
 #footersection a {color:#FFF;}
 #footersection .copyright {text-align:right; margin-top:3em; margin-right:8%;}
 
-/* 
+/*
  *  Education / Host a competition Page
  */
-#home-edu>#content {font-size: 140%;} 
 
-#three-wide {margin-top:10px;} 
-#three-wide section {
-	display: table-cell; 
-	width: 33%;
-	padding: 10px 5px;
-	}
-
-.column_content {
-	margin: 10px auto;
-    width: 80%;
+.home-edu h3 {
+  border-bottom: 1px solid #CCC;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  font-size: 20px;
 }
 
-.roundbox {
-	width: 80%; height: 100px;
-	-webkit-border-radius: 10px;
-	-moz-border-radius: 10px;
-	border-radius: 10px;
-	vertical-align: middle;
-	text-align:center;
-	margin: 0 auto;
-}
-	.roundbox>h3 { color: #444; font-size: 25px; }
-
-.leftbox {
-	background-image: -webkit-gradient(radial, 50% 0, 0, 50% 100, 950, from(white), to(#22F));
-	background-image: -moz-radial-gradient(50% 50% 90deg, circle cover, white, #22F);
+.home-edu ul , .home-edu ol {
+  margin-left: 20px;
 }
 
-.middlebox {
-	background-image: -webkit-gradient(radial, 50% 0, 0, 50% 100, 950, from(white), to(#d1d111));
-	background-image: -moz-radial-gradient(50% 50% 90deg, circle cover, white, #d1d111);
+.home-edu ol > li {
+  list-style-type: decimal;
+  margin-bottom: 5px;
 }
 
-.rightbox {
-	background-image: -webkit-gradient(radial, 50% 0, 0, 50% 100, 950, from(white), to(#2F2));
-	background-image: -moz-radial-gradient(50% 50% 90deg, circle cover, white, #2F2);
+.home-edu ul > li {
+  list-style-type: disc;
+  margin-bottom: 5px;
+}
+
+.home-edu li > em {
+  font-weight: bold;
+  font-style: italic;
+}
+
+.home-edu {
+  padding-top: 30px;
+}
+
+.home-edu .yui-g {
+  margin-top: 20px;
+}
+
+#more-involved-stats-image {
+  float: right;
 }
 
 /*
@@ -270,9 +291,7 @@ h2.punch { font-weight:bold; color: #487858;}
 .loginbutton:hover{
 	background-image: -webkit-linear-gradient(#CCC, #F2F2F2);
 	background-image: -moz-linear-gradient(center top , #CCC, #F2F2F2);
+  cursor: pointer;
 }
 .imgalign { padding:10px; } 
 
-/*
- * Education Page
- */

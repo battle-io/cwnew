@@ -5,6 +5,7 @@ Cwnew::Application.routes.draw do
     match "/auth/:provider/callback" , :to => "sessions#create"
     match "/auth/failure"            , :to => "sessions#new"
     match "/login" => redirect("/auth/github")
+    match "/logout" => "sessions#destroy"
 
   ## Bots
   #

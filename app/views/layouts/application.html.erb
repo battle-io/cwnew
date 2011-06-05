@@ -6,7 +6,7 @@
   <%= csrf_meta_tag %>
 </head>
 
-<body id="<%= body_id %>">
+<body>
 
 <header>
 <hgroup class="cenwrap">
@@ -24,9 +24,10 @@
 		<div id="userbar" class="yui-u">
 			<ul id="header-action-links">
         <% if current_user %>
-          <li><a href="/profile"><span class="header-action-link-text">Profile</span></a></li>
-        <% else %>
-          <li><a href="/login"><span class="header-action-link-text">Login with </span><%= image_tag "gh.png" %></a></li>
+          <li><a href="/profile">Profile</a></li>
+          <li><%= link_to "Logout" , logout_path %></li>
+        <% elsif !is_home? %>
+          <li><a href="/login"><span class="header-action-link-text">Login</span><%= image_tag "gh.png" , :class => "header-action-login-image" %></a></li>
         <% end %>
 			</ul>
 		</div>
@@ -41,7 +42,7 @@
 	</div>
 </nav>
 
-<div id="content" class="cenwrap">
+<div id="content" class="cenwrap <%= body_id %>">
 <%= yield %>
 
 </div> <!-- #content --> 

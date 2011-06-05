@@ -3,8 +3,7 @@ class User < ActiveRecord::Base
   # Relations
   has_many :authorizations
   has_many :bots
-  has_many :likes_given , :class_name => "Like"
-  has_many :likes , :through => :bots
+  has_many :liked , :class_name => "Like"
 
   # Instance Methods
 
@@ -12,6 +11,12 @@ class User < ActiveRecord::Base
     github_auth = authorizations.where( :provider => :github ).first
     return github_auth.auth_data_cache if github_auth
     nil
+  end
+
+  def likes
+    likes_array = []
+    bots.each { |b| likes_array.concat b.likes }
+    likes_array
   end
 
 end

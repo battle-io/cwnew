@@ -206,6 +206,10 @@ footer {
 #footersection a {color:#FFF;}
 #footersection .copyright {text-align:right; margin-top:3em; margin-right:8%;}
 
+/* 
+ *  Education / Host a competition Page
+ */
+#home-edu>#content {font-size: 140%;} 
 
 #three-wide {margin-top:10px;} 
 #three-wide section {
@@ -244,8 +248,6 @@ footer {
 	background-image: -webkit-gradient(radial, 50% 0, 0, 50% 100, 950, from(white), to(#2F2));
 	background-image: -moz-radial-gradient(50% 50% 90deg, circle cover, white, #2F2);
 }
-
-.blbar {height:5px; background: #aaa; margin: 15px 0 5px;}
 
 /*
  * Homepage

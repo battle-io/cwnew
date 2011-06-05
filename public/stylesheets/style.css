@@ -66,6 +66,7 @@
   width: 600px;
   text-align: center;
   margin-bottom: 10px;
+  position: relative;
 }
 
 .leaderboard-entry.me {
@@ -74,7 +75,7 @@
 
 .leaderboard-entry-left-icon , .leaderboard-entry-right-icon {
   position: absolute;
-  top: 111px;
+  top: 4px;
 }
 
 .leaderboard-entry-right-icon {

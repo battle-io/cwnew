@@ -44,7 +44,7 @@ aside {display: table-cell; }
 	padding: 10px 5px;
 	}
 
-#three-wide section>p {
+.column_content {
 	margin: 0 auto;
     width: 80%;
 }
@@ -59,17 +59,17 @@ aside {display: table-cell; }
 	margin: 0 auto;
 }
 
-.bluebox {
+.leftbox {
 	background-image: -webkit-gradient(radial, 50% 0, 0, 50% 100, 950, from(white), to(#22F));
 	background-image: -moz-radial-gradient(50% 50% 90deg, circle cover, white, #22F);
 }
 
-.greybox {
-	background-image: -webkit-gradient(radial, 50% 0, 0, 50% 100, 950, from(white), to(#222));
-	background-image: -moz-radial-gradient(50% 50% 90deg, circle cover, white, #222);
+.middlebox {
+	background-image: -webkit-gradient(radial, 50% 0, 0, 50% 100, 950, from(white), to(#d1d111));
+	background-image: -moz-radial-gradient(50% 50% 90deg, circle cover, white, #d1d111);
 }
 
-.greenbox {
+.rightbox {
 	background-image: -webkit-gradient(radial, 50% 0, 0, 50% 100, 950, from(white), to(#2F2));
 	background-image: -moz-radial-gradient(50% 50% 90deg, circle cover, white, #2F2);
 }

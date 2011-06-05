@@ -171,12 +171,12 @@ footer {
 	}
 
 .column_content {
-	margin: 0 auto;
+	margin: 10px auto;
     width: 80%;
 }
 
 .roundbox {
-	width: 80%; height: 200px;
+	width: 80%; height: 100px;
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
 	border-radius: 10px;
@@ -184,6 +184,7 @@ footer {
 	text-align:center;
 	margin: 0 auto;
 }
+	.roundbox>h3 { color: #444; font-size: 25px; }
 
 .leftbox {
 	background-image: -webkit-gradient(radial, 50% 0, 0, 50% 100, 950, from(white), to(#22F));
@@ -198,10 +199,6 @@ footer {
 .rightbox {
 	background-image: -webkit-gradient(radial, 50% 0, 0, 50% 100, 950, from(white), to(#2F2));
 	background-image: -moz-radial-gradient(50% 50% 90deg, circle cover, white, #2F2);
-}
-.roundbox>h3 {
-	color: #444;
-	font-size: 45px;
 }
 
 .blbar {height:5px; background: #aaa; margin: 15px 0 5px;}

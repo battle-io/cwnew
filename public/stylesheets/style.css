@@ -16,8 +16,6 @@ body {
 h1 {font-size: 500%;}
 h2 {font-size: 140%; line-height:1.2em; margin-top:1.2em; margin-bottom:2px;}
 
-header, footer { } 
-footer { text-align: center;} 
 
 hgroup {
 	padding: 30px 0;
@@ -55,6 +53,24 @@ aside {display: table-cell; }
 	display: table-cell; 
 	width: 800px; 
 	} 
+
+footer {
+	padding:1em 0 2em;
+	background: #5868dc;
+	color: #FFF; 
+	font-family: garamond;
+	margin-top:2em;
+}
+#footersection {
+	width:988px; 
+	margin: 0 auto;   
+	}
+	
+#footersection h2 {font-family:garamond; margin:0 0 0.5em;font-size:150%; font-weight:800;}
+#footersection li {padding:0px; font-size:105%}
+#footersection a {color:#FFF;}
+#footersection .copyright {text-align:right; margin-top:3em; margin-right:8%;}
+
 
 #three-wide {margin-top:10px;} 
 #three-wide section {

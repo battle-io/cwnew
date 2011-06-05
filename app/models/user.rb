@@ -1,5 +1,9 @@
 class User < ActiveRecord::Base
+
+  # Relations
   has_many :authorizations
+
+  # Instance Methods
 
   def github_data
     github_auth = authorizations.where( :provider => :github ).first

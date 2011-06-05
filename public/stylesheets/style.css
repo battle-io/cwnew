@@ -78,6 +78,10 @@
   top: 4px;
 }
 
+.leaderboard-entry-left-icon {
+  left: 0;
+}
+
 .leaderboard-entry-right-icon {
   right: 0;
 }

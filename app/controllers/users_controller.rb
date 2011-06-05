@@ -4,9 +4,7 @@ class UsersController < ApplicationController
   before_filter :check_authenticated
 
   def show
-    user_id = params[:id] || session["user_id"]
-    user = User.find user_id
-    @presenter = Users::ShowPresenter.new( user )
+    @presenter = Users::ShowPresenter.new( current_user )
   end
 
 end

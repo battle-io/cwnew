@@ -134,6 +134,11 @@ form.new_bot {
   margin-top: 30px;
 }
 
+.bots-show textarea {
+  width: 400px;
+  height: 100px;
+}
+
 /*
  * General
  */

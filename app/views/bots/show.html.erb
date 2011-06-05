@@ -3,13 +3,14 @@
   <%= f.hidden_field :bot_id , { :value => @bot.id } %>
   <a href="#"><%= image_tag "thumb_up.png" , :id => "bot-thumb-up" , "data-form-id" => "new_like" %></a>
 <% end %>
-<%= image_tag "tick.png" , :id => "bot-thumb-up-tick" %>
-<p><%= @bot.description%></p>
+<div>Game: <%= @bot.game.title %></div>
 <% if @bot.repo %>
   <em>GitHub Repo: </em><%= link_to @bot.repo %>
 <% else %>
   <em>No GitHub repo &mbdash; shame on you!</em>
 <% end %>
+<%= image_tag "tick.png" , :id => "bot-thumb-up-tick" %>
+<div><textarea><%= @bot.description%></textarea></div>
 <div id="bot-gist-list">
   <h4>Your Bot Gists</h4>
   <% @bot.bot_gists.each do |gist| %>

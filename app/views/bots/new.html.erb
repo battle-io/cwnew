@@ -12,6 +12,7 @@
   <div class="form-row">
     <%= f.label :game_id %>
     <%= f.select :game_id , Game.all.collect { |g| [ g.title , g.id ] } , { :prompt => true } %>
+  </div>
   <div class="form-row">
     <%= f.label :description %>
     <%= f.text_area :description %>

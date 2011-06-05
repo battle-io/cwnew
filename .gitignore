@@ -5,4 +5,4 @@ tmp/
 .DS_Store
 .rvmrc
 config/initializers/omniauth.rb
-
+config/initializers/ssl_override.rb
